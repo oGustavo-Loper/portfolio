@@ -30,7 +30,7 @@ const Sidebar: React.FC = () => {
   const isActive = (path: string) => router.pathname === path;
 
   const links = [
-    { name: 'Sobre Eu', href: '/' },
+    { name: 'Sobre', href: '/' },
     { name: 'Linguagens', href: '/linguagens' },
     { name: 'Projetos', href: '/projetos' },
   ];
@@ -160,7 +160,7 @@ const Sidebar: React.FC = () => {
             </VStack>
             <Popover isLazy>
               <PopoverTrigger>
-                <IconButton icon={<FiMoreHorizontal />} aria-label="Mais Opções" variant="ghost" />
+                <IconButton style={{marginLeft: '10px'}} icon={<FiMoreHorizontal />} aria-label="Mais Opções" variant="ghost" />
               </PopoverTrigger>
               <PopoverContent w="105px" h="35px">
                 <PopoverArrow />

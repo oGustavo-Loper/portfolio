@@ -1,6 +1,6 @@
 import { Box, Heading, Flex, SimpleGrid } from "@chakra-ui/react";
-import ProjectCard from "./components/ProjectCard";
-import Sidebar from "./components/Sidebar";
+import ProjectCard from "../components/ProjectCard";
+import Sidebar from "../components/Sidebar";
 
 const projects = [
   { 

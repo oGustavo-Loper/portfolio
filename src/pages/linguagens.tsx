@@ -1,6 +1,6 @@
 import { Box, SimpleGrid, Heading, Flex } from "@chakra-ui/react";
-import LanguageCard from "./components/LanguageCard";
-import Sidebar from "./components/Sidebar";
+import LanguageCard from "../components/LanguageCard";
+import Sidebar from "../components/Sidebar";
 
 const languages = [
   { name: "HTML", imageSrc: "https://imgs.search.brave.com/uYdp_mAugIFP1aLvY9mARspEn5lIZXXkA4glfSRW6Lc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYxL0hUTUw1X2xv/Z29fYW5kX3dvcmRt/YXJrLnN2Zw.svg" },
@@ -19,7 +19,7 @@ const Linguagens: React.FC = () => {
       <Sidebar />
       <Box flex="1" p="8" ml={{ base: "0", md: "280px" }} textAlign='center'>
         <Flex direction="column" align="center">
-          <Heading mb="8" textAlign="center" color='white'>Linguagens que Eu Sei</Heading>
+          <Heading mb="8" textAlign="center" color='white'>Conhecimento em linguagens</Heading>
           <Box
             borderWidth="1px"
             borderRadius="lg"

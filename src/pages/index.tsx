@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from "./components/Sidebar";
+import Sidebar from "../components/Sidebar";
 import { Box, Heading, Text, Flex, SimpleGrid, Image } from "@chakra-ui/react";
 
 const MinhaPagina: React.FC = () => {
@@ -30,7 +30,7 @@ const MinhaPagina: React.FC = () => {
                 Em 2019, após terminar o ensino médio, fui aprovado para o curso de Engenharia de Computação na UFPEL, onde curso até os dias de hoje.
               </Text>
               <Text color='white'>
-                2020 chegou, e com ele veio a Covid-19, a UFPEL entraria em um recesso forçado, no qual acreditaríamos que em 15 dias estaria tudo normalizado, mas não foi bem assim. Tinha conseguido uma vaga de serviço como Jovem Aprendiz na Lifemed Equipamentos Médicos, no setor de P&D, e não queria ficar atrasado em relação aos estudos, foi onde comecei a cursar Análise e Desenvolvimento de Sistemas no Senac Pelotas, um curso tecnólogo, que teve duração de três anos.
+                2020 chegou, e com ele veio a Covid-19, a UFPEL entraria em um recesso forçado, no qual acreditaríamos que em 15 dias estaria tudo normalizado, mas não foi bem assim. Fui selecionado para uma vaga como Jovem Aprendiz na Lifemed Equipamentos Médicos, no setor de P&D, e não queria ficar atrasado em relação aos estudos, foi onde comecei a cursar Análise e Desenvolvimento de Sistemas no Senac Pelotas, um curso tecnólogo, que teve duração de três anos.
               </Text>
               <Text color='white'>
                 Estava conseguindo conciliar bem as atividades dos três locais. E em agosto de 2022, pedi o desligamento da empresa Lifemed para me aventurar em uma empresa de desenvolvimento de software. Brainny Smart Solutions me recebeu de braços abertos e me ensinou muito sobre desenvolvimento web, utilizando linguagem de programação do tipo TypeScript, React, React Native.
