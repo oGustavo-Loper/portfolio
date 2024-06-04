@@ -10,7 +10,7 @@ import {
 import { FiMenu, FiMoreHorizontal, FiX } from "react-icons/fi";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useRouter } from 'next/router';
-import { getFirstAndLastName } from '@/pages/utils/FirstAndName';
+import { getFirstAndLastName } from '@/utils/FirstAndName';
 
 const Sidebar: React.FC = () => {
   const { isOpen: isDrawerOpen, onOpen: onDrawerOpen, onClose: onDrawerClose } = useDisclosure();
