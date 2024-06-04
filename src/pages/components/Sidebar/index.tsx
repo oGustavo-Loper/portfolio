@@ -10,6 +10,7 @@ import {
 import { FiMenu, FiMoreHorizontal, FiX } from "react-icons/fi";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useRouter } from 'next/router';
+import { getFirstAndLastName } from '@/pages/utils/FirstAndName';
 
 const Sidebar: React.FC = () => {
   const { isOpen: isDrawerOpen, onOpen: onDrawerOpen, onClose: onDrawerClose } = useDisclosure();
@@ -154,7 +155,7 @@ const Sidebar: React.FC = () => {
           <Box display="flex" alignItems="center">
             <Image src='https://avatars.githubusercontent.com/u/62165053' alt="Gustavo Loper" borderRadius="full" boxSize="40px" mr="4" />
             <VStack alignItems="flex-start" gap={0}>
-              <Text fontSize={18} fontWeight='bold'>{infos[0].name}</Text>
+              <Text fontSize={18} fontWeight='bold'>{getFirstAndLastName(infos[0].name)}</Text>
               <Text fontSize={14}>Frontend Developer</Text>
             </VStack>
             <Popover isLazy>
