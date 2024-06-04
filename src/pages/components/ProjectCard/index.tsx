@@ -11,7 +11,7 @@ interface ProjectCardProps {
   linkView?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, imageSrcs, linkGithub, linkView }) => {
+const ProjectCard = ({ name, description, imageSrcs = [], linkGithub, linkView }: ProjectCardProps) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, imageSrcs,
   return (
     <Box borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="md" mb="8" w="100%" maxW="800px">
       <Slider {...settings}>
-        {imageSrcs.map((src, index) => (
+        {Array.isArray(imageSrcs) && imageSrcs.map((src, index) => (
           <Box key={index} width="100%" display="flex" justifyContent="center">
             <Image 
               src={src} 

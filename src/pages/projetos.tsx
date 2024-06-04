@@ -24,9 +24,16 @@ const MinhaPagina: React.FC = () => {
         <Flex direction="column" align="center">
           <Heading mb="8" textAlign="center" color='white'>Meus Projetos</Heading>
             <SimpleGrid columns={{ base: 1, md: 1 }} spacing="8">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} name={project.name} description={project.description} imageSrcs={project.imageSrcs} linkGithub={project.linkGithub} linkView={project.linkView} />
-            ))}
+              {projects.map((project, index) => (
+                <ProjectCard 
+                  key={index}
+                  name={project.name}
+                  description={project.description}
+                  imageSrcs={project.imageSrcs}
+                  linkGithub={project.linkGithub}
+                  linkView={project.linkView}
+                />
+              ))}
             </SimpleGrid>
         </Flex>
       </Box>
