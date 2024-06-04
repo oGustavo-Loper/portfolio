@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from "../pages/components/Sidebar";
+import Sidebar from "./components/Sidebar";
 import { Box, Heading, Text, Flex, SimpleGrid, Image } from "@chakra-ui/react";
 
 const MinhaPagina: React.FC = () => {
